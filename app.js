@@ -22,4 +22,6 @@ app.get('/user', (request, response) => {
 
 app.use(express.static("./"));
 
-app.listen(3000);
+app.listen(3000, () => {
+    console.log("App started on 3000")
+});
